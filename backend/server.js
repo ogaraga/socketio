@@ -10,7 +10,7 @@ io.on('connection', (socket)=>{
     socket.on('chat', (data)=>{
         io.emit('chat', data)
         });   
-    socket.on('disconnect',(socket)=>console.log('User disconnected'))  
+    socket.on('disconnect',(socket)=>console.log('User disconnected'));
             
 });
 server.listen(4001, ()=>console.log('App running on port 4001'));
